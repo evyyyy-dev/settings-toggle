@@ -57,6 +57,8 @@ StarterPlayerScripts
  └─ SettingsController
 ```
 
+#### System flow
+
 - When a player presses the ToggleButton, the SettingsController opens/closes the SettingsUI.
 
 - When a player clicks a switch, the Settings module updates the state and runs the behavior defined in the `bindings` table.
