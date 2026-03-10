@@ -27,7 +27,7 @@
 Workspace
  ├─ Songs
  │   └─ (list of songs)
- └─ (objects with Sounds tagged "SFX")    │ For example, a cricket playing a chirping sound which has the tag "SFX".
+ └─ (parts) with Sounds tagged "SFX")      │ For example, a cricket playing a chirping sound which has the tag "SFX".
 
 
 ReplicatedStorage
