@@ -27,24 +27,24 @@
 Workspace
  ├─ Songs
  │   └─ (list of songs)
- └─ (parts) with Sounds tagged "SFX")      │ For example, a cricket playing a chirping sound which has the tag "SFX".
+ └─ (parts / meshes with sounds tagged "SFX")      │ For example, a cricket playing a chirping sound which has the tag "SFX".
 
 
 ReplicatedStorage
  └─ Modules
-     ├─ Settings                          │ Handles switch state logic, synchronization between main and sub-switches, and calls Animation and Sound modules when state changes.
-     ├─ Sound                             │ Manages music playlists and toggles sound effects by controlling sounds tagged "SFX".
-     └─ Animation                         │ Handles UI tweening for switches and sliders.
+     ├─ Settings                                   │ Handles switch state logic, synchronization between main and sub-switches, and calls Animation and Sound modules when state changes.
+     ├─ Sound                                      │ Manages music playlists and toggles sound effects by controlling sounds tagged "SFX".
+     └─ Animation                                  │ Handles UI tweening for switches and sliders.
 
 
  StarterGui
  └─ SettingsUI
      ├─ MainFrame
      │   └─ SwitchesContainer
-     │       ├─ MainSwitch                │ Reflects the state of its sub-switches, so if all are off it turns them on, otherwise it turns them all off.
-     │       │    └─ Switch               │ The clickable button that triggers toggle behavior and communicates state changes to the Settings module.
-     │       │        └─ Slider           │ The visual element that smoothly transitions using TweenService when the switch is toggled.
-     │       ├─ MusicSwitch               │ One of the sub-switches. Toggles just like the main switch, but has a different function.
+     │       ├─ MainSwitch                         │ Reflects the state of its sub-switches, so if all are off it turns them on, otherwise it turns them all off.
+     │       │    └─ Switch                        │ The clickable button that triggers toggle behavior and communicates state changes to the Settings module.
+     │       │        └─ Slider                    │ The visual element that smoothly transitions using TweenService when the switch is toggled.
+     │       ├─ MusicSwitch                        │ One of the sub-switches. Toggles just like the main switch, but has a different function.
      │       │    └─ Switch
      │       │        └─ Slider
      │       └─ EffectsSwitch
@@ -99,4 +99,4 @@ I'd also consider expanding the system beyond simple toggle switches, for exampl
 
 ---
 
-> **Status:** Completed, but plans for future improvement exist. I’d like to revisit and expand it when I have time.
+> ☑️ **Status:** Completed, but plans for future improvement exist. I’d like to revisit and expand it when I have time.
