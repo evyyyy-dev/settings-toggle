@@ -5,8 +5,9 @@
 ## Features
 
 **Settings System**
-- Toggleable switches using TweenService
-- Debounces (to avoid spamming buttons breaking anything)
+- Toggleable switches
+- Smooth animations using TweenService
+- Debounces to avoid spamming buttons breaking anything
 - Easily expandable
 
 **Current Toggles**
@@ -59,17 +60,17 @@ StarterPlayerScripts
 
 #### System flow
 
-- When a player presses the ToggleButton, the SettingsController opens/closes the SettingsUI.
+- When a player presses `ToggleButton`, the `SettingsController` opens/closes the `SettingsUI`.
 
-- When a player clicks a switch, the Settings module updates the state and runs the behavior defined in the `bindings` table.
+- When a player clicks a switch, the `Settings` module updates the state and runs the behavior defined in the `bindings` table.
 
-- The Animation module is called by the Settings module to tween the Switch and Slider to their correct visual state.
+- The `Animation` module is called by the `Settings` module to tween the `Switch` and `Slider` to their correct visual state.
 
-- Toggling the MusicSwitch will mute or restore the playlist located in Workspace.Songs.
+- Toggling the `MusicSwitch` will mute or restore the playlist located in `Workspace.Songs`.
 
-- The EffectsSwitch determines the mute state of  all sounds tagged "SFX".
+- The `EffectsSwitch` determines the mute state of all sounds tagged "SFX".
 
-- When the MainSwitch is toggled, it updates the staste of all sub-switches and triggers their respective sound behavior.
+- When the `MainSwitch` is toggled, it updates the state of all sub-switches and triggers their respective sound behavior.
 
 ---
 
@@ -81,7 +82,7 @@ Check out [code-snippets.lua](code-snippets.lua) for code examples.
 
 ## Why I Made This
 
-This was my third big Roblox system, which I built to improve my understanding of modular system design and UI interaction.
+This was my third big system which I built to improve my understanding of modular system design and UI interaction.
 
 Like some of my earlier projects, it was also inspired by a friend’s project, but I wanted to take the concept further with cleaner structure and better user experience. I planned on creating something smooth to use and visually responsive through tweens and clear UI.
 
@@ -89,7 +90,7 @@ Like some of my earlier projects, it was also inspired by a friend’s project, 
 
 With this project, I deepened my understanding of dictionaries and gained experience in structuring code across multiple ModuleScripts instead of one big LocalScript and ServerScript.
 
-I also improved in using TweenService for UI animation by a bit, and learned how to format my scripts with comments to make them easier to scan.
+I also improved in using TweenService for UI animation and learned how to format my scripts with comments to make them easier to scan.
 
 ## What I'd Improve
 
@@ -99,4 +100,4 @@ I'd also consider expanding the system beyond simple toggle switches, for exampl
 
 ---
 
-> ☑️ **Status:** Completed, but plans for future improvement exist. I’d like to revisit and expand it when I have time.
+> ✅ **Status:** Completed, but plans for future improvement exist. I’d like to revisit and expand it when I have time.
