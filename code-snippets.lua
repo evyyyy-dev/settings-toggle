@@ -41,8 +41,7 @@ local function syncMainSwitch()
 	end)
 end
 
--- Toggles each clicked switch.
--- If the clicked switch is the main switch, it turns all sub-switches on/off to reflect with the new main-switches' state.
+-- Toggles each clicked switch, with special functionality for the main switch.
 function Settings.SwitchPanel(switchButton)
 	local name = switchButton.Name
 
